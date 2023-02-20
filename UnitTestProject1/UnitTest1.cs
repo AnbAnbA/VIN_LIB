@@ -21,7 +21,7 @@ namespace UnitTestProject1
         public void CheckVINCorrectType()
         {
             string vin = "KFFCF52557C401113";
-            Assert.IsInstanceOfType(Class1.CheckVIN(vin), vin.GetType());
+            Assert.IsInstanceOfType(Class1.CheckVIN(vin), typeof(bool));
         }
         [TestMethod]
         public void CheckVINNotCorrectType()
